@@ -99,6 +99,7 @@ def save():
     master_ws.cell(row=1, column=3).value = "Assassin Email"
     master_ws.cell(row=1, column=4).value = "Target First"
     master_ws.cell(row=1, column=5).value = "Target Last"
+    currentDirectory = os.getcwd()
     for current in range(0, len(seniors_array)):
         row = current + 2
         master_ws.cell(row=row, column=1).value = seniors_array[current][0]
@@ -106,7 +107,7 @@ def save():
         master_ws.cell(row=row, column=3).value = seniors_array[current][2]
         master_ws.cell(row=row, column=4).value = seniors_array[current][3]
         master_ws.cell(row=row, column=5).value = seniors_array[current][4]
-        master_wb.save("Master_List.xlsx")
+        master_wb.save(str(currentDirectory) + "/Master_List.xlsx")
 
 def email():
     if wb == None or ws == None:
