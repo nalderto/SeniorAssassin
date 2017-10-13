@@ -1,4 +1,5 @@
 # SeniorAssassin
+![Screenshot](https://user-images.githubusercontent.com/25762130/31569617-233b980c-b04a-11e7-85c1-69c0c681d245.png)
 ### What is Senior Assassin?
 Senior Assassin is a game, typically played in the ending months of the a student's senior year of high school, where students are assigned to "kill" their assigned target.  Usually, squirt guns or nerf guns are used to "kill" a target.  Each participating student is assinged a target, however the target isn't necessarily assigned their assassin.  This creates a chain of targets and assasins.  Students must "kill" their target in the given period of time, or they will be eliminated from the game.  Students that successfully kill their target, and avoid being "killed" continue into the next round.  The rounds continue until a winner is determined.  Additional rules are typically added to limit when and where a person can be assassinated.      
 ### What does this program do?
