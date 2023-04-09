@@ -169,12 +169,15 @@ def email():
             msg['Subject'] = "Senior Assassin"
 
             # Message Body
-            body = current.first_name + " " + current.last_name + ",\n" + "You have been assigned  " + current.target_first_name + " " + current.target_last_name
+            body = current.first_name + " " + current.last_name + ",\n" + "You have been assigned " + current.target_first_name + " " + current.target_last_name
             msg.attach(MIMEText(body, 'plain'))
 
             text = msg.as_string()
             server.sendmail(from_address.get(), to_address, text)
-            server.quit()
+
+        server.quit()
+        status_label.config(text="Emails finished sending!")
+
 
 # Determine if email is valid
 def isEmailValid(email):
